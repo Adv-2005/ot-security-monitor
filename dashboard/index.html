@@ -1,0 +1,24 @@
+<!-- dashboard/index.html -->
+<script>
+async function fetchAlerts() {
+    const res  = await fetch('http://localhost:8000/api/alerts?limit=50');
+    const data = await res.json();
+    const tbody = document.getElementById('alert-table-body');
+    tbody.innerHTML = '';
+    data.forEach(alert => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${alert.ts}</td>
+            <td>${alert.src_ip}</td>
+            <td>${alert.proto}</td>
+            <td>${alert.anomaly_type}</td>
+            <td><span class="badge badge-${alert.severity.toLowerCase()}">${alert.severity}</span></td>
+            <td>${alert.score.toFixed(3)}</td>
+        `;
+        tbody.appendChild(row);
+    });
+}
+
+setInterval(fetchAlerts, 5000);
+fetchAlerts();
+</script>

@@ -1,0 +1,13 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	modbus
+#open	2026-04-15-19-31-04
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	tid	unit	func	pdu_type	exception
+#types	time	string	addr	port	addr	port	count	count	string	string	string
+1776281464.905623	CTPxDx3dIMuz1BKrs2	127.0.0.1	60432	127.0.0.1	502	0	1	REPORT_SLAVE_ID	REQ	-
+1776281464.933760	CTPxDx3dIMuz1BKrs2	127.0.0.1	60432	127.0.0.1	502	0	1	REPORT_SLAVE_ID_EXCEPTION	RESP	ILLEGAL_FUNCTION
+1776281464.934687	Clr3BU2ZvximEWqcUd	127.0.0.1	60444	127.0.0.1	502	0	1	ENCAP_INTERFACE_TRANSPORT	REQ	-
+1776281465.035044	Clr3BU2ZvximEWqcUd	127.0.0.1	60444	127.0.0.1	502	0	1	ENCAP_INTERFACE_TRANSPORT_EXCEPTION	RESP	ILLEGAL_FUNCTION
+#close	2026-04-15-19-35-35

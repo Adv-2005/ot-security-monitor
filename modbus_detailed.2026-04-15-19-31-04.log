@@ -1,0 +1,12 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	modbus_detailed
+#open	2026-04-15-19-31-04
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	tid	unit	func	address	quantity	request_values	response_values	modbus_detailed_link_id	matched	request_subfunction_code	response_subfunction_code	request_data	response_data	exception_code	mei_type
+#types	time	string	addr	port	addr	port	count	count	string	count	count	vector[count]	vector[count]	string	bool	string	string	string	string	string	string
+1776281464.905623	CTPxDx3dIMuz1BKrs2	127.0.0.1	60432	127.0.0.1	502	0	1	REPORT_SLAVE_ID	-	-	-	-	-	-	-	-	-	-	-	-
+1776281464.933760	CTPxDx3dIMuz1BKrs2	127.0.0.1	60432	127.0.0.1	502	0	1	REPORT_SLAVE_ID_EXCEPTION	-	-	-	-	-	-	-	-	-	-	ILLEGAL_FUNCTION	-
+1776281464.934687	Clr3BU2ZvximEWqcUd	127.0.0.1	60444	127.0.0.1	502	0	1	ENCAP_INTERFACE_TRANSPORT	-	-	-	-	NCJO3NoZYx2IrMLN	T	-	-	-	-	ILLEGAL_FUNCTION	Read Device Identification
+#close	2026-04-15-19-35-35
