@@ -1,3 +1,0 @@
-{"ts":1776277785.258475,"uid":"CSQXIz22zPS63jXI14","id.orig_h":"172.30.67.143","id.orig_p":49724,"id.resp_h":"103.132.16.24","id.resp_p":80,"name":"bad_TCP_checksum","notice":false,"peer":"zeek","source":"TCP"}
-{"ts":1776277785.270711,"uid":"CSQXIz22zPS63jXI14","id.orig_h":"172.30.67.143","id.orig_p":49724,"id.resp_h":"103.132.16.24","id.resp_p":80,"name":"active_connection_reuse","notice":false,"peer":"zeek","source":"TCP"}
-{"ts":1776278610.802439,"uid":"CcBywq9Tfo5nlsvHi","id.orig_h":"172.30.67.143","id.orig_p":54462,"id.resp_h":"103.132.16.8","id.resp_p":80,"name":"active_connection_reuse","notice":false,"peer":"zeek","source":"TCP"}

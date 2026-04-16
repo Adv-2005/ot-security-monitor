@@ -1,64 +1,252 @@
-2026-04-16 03:40:29,186 --force option specified. Using testing configuration
-2026-04-16 03:40:29,189 Starting Conpot using template: /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/templates/default
-2026-04-16 03:40:29,189 Starting Conpot using configuration found in: /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/testing.cfg
-2026-04-16 03:40:29,198 Can't find the temp directory. Conpot VFS would be kept at : /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/ConpotTempFS
-2026-04-16 03:40:29,198 Using default FS path. tar:///home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/data.tar
-2026-04-16 03:40:29,200 Initializing Virtual File System at /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/ConpotTempFS/__conpot__cxer7l72. Source specified : tar:///home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/data.tar
+2026-04-16 15:04:00,842 --force option specified. Using testing configuration
+2026-04-16 15:04:00,843 Starting Conpot using template: /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/templates/default
+2026-04-16 15:04:00,843 Starting Conpot using configuration found in: /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/testing.cfg
+2026-04-16 15:04:00,849 Can't find the temp directory. Conpot VFS would be kept at : /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/ConpotTempFS
+2026-04-16 15:04:00,849 Using default FS path. tar:///home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/data.tar
+2026-04-16 15:04:00,850 Initializing Virtual File System at /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/ConpotTempFS/__conpot__z42id0kw. Source specified : tar:///home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/data.tar
  Please wait while the system copies all specified files
-2026-04-16 03:40:29,260 Fetched 103.92.103.159 as external ip.
-2026-04-16 03:40:29,266 Conpot modbus initialized
-2026-04-16 03:40:29,266 Found and enabled ('modbus', <conpot.protocols.modbus.modbus_server.ModbusServer object at 0x788332ba1b40>) protocol.
-2026-04-16 03:40:29,270 Conpot S7Comm initialized
-2026-04-16 03:40:29,270 Found and enabled ('s7comm', <conpot.protocols.s7comm.s7_server.S7Server object at 0x788332ba2740>) protocol.
-2026-04-16 03:40:29,273 Found and enabled ('http', <conpot.protocols.http.web_server.HTTPServer object at 0x788332ba28c0>) protocol.
-2026-04-16 03:40:29,275 Found and enabled ('snmp', <conpot.protocols.snmp.snmp_server.SNMPServer object at 0x788332ba1ba0>) protocol.
-2026-04-16 03:40:29,277 Conpot Bacnet initialized using the /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/templates/default/bacnet/bacnet.xml template.
-2026-04-16 03:40:29,277 Found and enabled ('bacnet', <conpot.protocols.bacnet.bacnet_server.BacnetServer object at 0x788332ba2b90>) protocol.
-2026-04-16 03:40:29,279 IPMI BMC initialized.
-2026-04-16 03:40:29,279 Conpot IPMI initialized using /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/templates/default/ipmi/ipmi.xml template
-2026-04-16 03:40:29,279 Found and enabled ('ipmi', <conpot.protocols.ipmi.ipmi_server.IpmiServer object at 0x788332ba2f20>) protocol.
-2026-04-16 03:40:29,282 Class    22/0x0016, Instance   1, Attribute     1 <== [{'class': 22}, {'instance': 1}, {'attribute': 1}]
-2026-04-16 03:40:29,282 Class    22/0x0016, Instance   1, Attribute     2 <== [{'class': 22}, {'instance': 1}, {'attribute': 2}]
-2026-04-16 03:40:29,282 Class    22/0x0016, Instance   1, Attribute     1 <== [{'class': 22}, {'instance': 1}, {'attribute': 1}]
-2026-04-16 03:40:29,283 Class    22/0x0016, Instance   1, Attribute     3 <== [{'class': 22}, {'instance': 1}, {'attribute': 3}]
-2026-04-16 03:40:29,283 Class    22/0x0016, Instance   1, Attribute     1 <== [{'class': 22}, {'instance': 1}, {'attribute': 1}]
-2026-04-16 03:40:29,283 Class    22/0x0016, Instance   1, Attribute     2 <== [{'class': 22}, {'instance': 1}, {'attribute': 2}]
-2026-04-16 03:40:29,283 Found and enabled ('enip', <conpot.protocols.enip.enip_server.EnipServer object at 0x788332ba34c0>) protocol.
-2026-04-16 03:40:29,286 Creating persistent data store for protocol: ftp
-2026-04-16 03:40:29,289 FTP Serving File System at /data/ftp/ in vfs. FTP data_fs sub directory: /ftp
-2026-04-16 03:40:29,294 Found and enabled ('ftp', <conpot.protocols.ftp.ftp_server.FTPServer object at 0x788332ba39d0>) protocol.
-2026-04-16 03:40:29,296 Creating persistent data store for protocol: tftp
-2026-04-16 03:40:29,298 TFTP Serving File System at /data/tftp/ in vfs. TFTP data_fs sub directory: /tftp
-2026-04-16 03:40:29,300 Found and enabled ('tftp', <conpot.protocols.tftp.tftp_server.TftpServer object at 0x788332a18160>) protocol.
-2026-04-16 03:40:29,300 No proxy template found. Service will remain unconfigured/stopped.
-2026-04-16 03:40:29,300 Modbus server started on: ('0.0.0.0', 5020)
-2026-04-16 03:40:29,301 S7Comm server started on: ('0.0.0.0', 10201)
-2026-04-16 03:40:29,301 HTTP server started on: ('0.0.0.0', 8800)
-2026-04-16 03:40:29,499 SNMP server started on: ('0.0.0.0', 16100)
-2026-04-16 03:40:29,501 Bacnet server started on: ('0.0.0.0', 47808)
-2026-04-16 03:40:29,501 IPMI server started on: ('0.0.0.0', 6230)
-2026-04-16 03:40:49,506 handle server PID [ 1095] starting on ('0.0.0.0', 44818)
-2026-04-16 03:40:49,506 handle server PID [ 1095] responding to external done/disable signal via <class 'cpppo.dotdict.apidict'> {'done': False, 'disable': False, 'latency': 0.1}
-2026-04-16 03:40:49,506 Serving TCP/IP:     1, UDP/IP:     0, w/ latency:   0.100s, timeout:   0.200s (w/NO idle service)
-2026-04-16 03:40:49,507 FTP server started on: ('0.0.0.0', 2121)
-2026-04-16 03:40:49,508 Starting TFTP server at ('0.0.0.0', 6969)
-2026-04-16 03:44:18,281 New modbus session from 127.0.0.1 (495bbdaf-7a5f-451c-9381-1176b653e7dc)
-2026-04-16 03:44:18,285 New Modbus connection from 127.0.0.1:48022. (495bbdaf-7a5f-451c-9381-1176b653e7dc)
-2026-04-16 03:44:18,285 Exception occurred in ModbusServer.handle() at sock.recv(): [Errno 104] Connection reset by peer
-2026-04-16 03:44:18,286 Modbus client disconnected. (495bbdaf-7a5f-451c-9381-1176b653e7dc)
-2026-04-16 03:44:50,609 Session timed out: 495bbdaf-7a5f-451c-9381-1176b653e7dc
-2026-04-16 03:45:45,647 New modbus session from 127.0.0.1 (f2766879-5ab8-4fc7-8433-2a05b6c35144)
-2026-04-16 03:45:45,648 New Modbus connection from 127.0.0.1:37374. (f2766879-5ab8-4fc7-8433-2a05b6c35144)
-2026-04-16 03:45:45,649 Exception occurred in ModbusServer.handle() at sock.recv(): [Errno 104] Connection reset by peer
-2026-04-16 03:45:45,649 Modbus client disconnected. (f2766879-5ab8-4fc7-8433-2a05b6c35144)
-2026-04-16 03:46:16,441 Session timed out: f2766879-5ab8-4fc7-8433-2a05b6c35144
-2026-04-16 03:50:15,869 New modbus session from 127.0.0.1 (4055e86b-e0ad-4240-9270-800a10671e14)
-2026-04-16 03:50:15,869 New Modbus connection from 127.0.0.1:36080. (4055e86b-e0ad-4240-9270-800a10671e14)
-2026-04-16 03:50:15,869 Exception occurred in ModbusServer.handle() at sock.recv(): [Errno 104] Connection reset by peer
-2026-04-16 03:50:15,870 Modbus client disconnected. (4055e86b-e0ad-4240-9270-800a10671e14)
-2026-04-16 03:50:46,660 Session timed out: 4055e86b-e0ad-4240-9270-800a10671e14
-2026-04-16 03:54:21,053 New modbus session from 127.0.0.1 (7263c9d1-ae9c-40ba-9ca1-f50e74e0b457)
-2026-04-16 03:54:21,054 New Modbus connection from 127.0.0.1:55796. (7263c9d1-ae9c-40ba-9ca1-f50e74e0b457)
-2026-04-16 03:54:21,054 Exception occurred in ModbusServer.handle() at sock.recv(): [Errno 104] Connection reset by peer
-2026-04-16 03:54:21,054 Modbus client disconnected. (7263c9d1-ae9c-40ba-9ca1-f50e74e0b457)
-2026-04-16 03:54:53,736 Session timed out: 7263c9d1-ae9c-40ba-9ca1-f50e74e0b457
+2026-04-16 15:04:00,904 Fetched 103.92.103.159 as external ip.
+2026-04-16 15:04:00,907 Conpot modbus initialized
+2026-04-16 15:04:00,907 Found and enabled ('modbus', <conpot.protocols.modbus.modbus_server.ModbusServer object at 0x77c69c4ad8a0>) protocol.
+2026-04-16 15:04:00,908 Conpot S7Comm initialized
+2026-04-16 15:04:00,908 Found and enabled ('s7comm', <conpot.protocols.s7comm.s7_server.S7Server object at 0x77c69c4ae4a0>) protocol.
+2026-04-16 15:04:00,911 Found and enabled ('http', <conpot.protocols.http.web_server.HTTPServer object at 0x77c69c4ae620>) protocol.
+2026-04-16 15:04:00,912 Found and enabled ('snmp', <conpot.protocols.snmp.snmp_server.SNMPServer object at 0x77c69c4ad900>) protocol.
+2026-04-16 15:04:00,913 Conpot Bacnet initialized using the /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/templates/default/bacnet/bacnet.xml template.
+2026-04-16 15:04:00,913 Found and enabled ('bacnet', <conpot.protocols.bacnet.bacnet_server.BacnetServer object at 0x77c69c4ae8f0>) protocol.
+2026-04-16 15:04:00,915 IPMI BMC initialized.
+2026-04-16 15:04:00,915 Conpot IPMI initialized using /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/templates/default/ipmi/ipmi.xml template
+2026-04-16 15:04:00,915 Found and enabled ('ipmi', <conpot.protocols.ipmi.ipmi_server.IpmiServer object at 0x77c69c4aec80>) protocol.
+2026-04-16 15:04:00,917 Class    22/0x0016, Instance   1, Attribute     1 <== [{'class': 22}, {'instance': 1}, {'attribute': 1}]
+2026-04-16 15:04:00,917 Class    22/0x0016, Instance   1, Attribute     2 <== [{'class': 22}, {'instance': 1}, {'attribute': 2}]
+2026-04-16 15:04:00,917 Class    22/0x0016, Instance   1, Attribute     1 <== [{'class': 22}, {'instance': 1}, {'attribute': 1}]
+2026-04-16 15:04:00,917 Class    22/0x0016, Instance   1, Attribute     3 <== [{'class': 22}, {'instance': 1}, {'attribute': 3}]
+2026-04-16 15:04:00,917 Class    22/0x0016, Instance   1, Attribute     1 <== [{'class': 22}, {'instance': 1}, {'attribute': 1}]
+2026-04-16 15:04:00,918 Class    22/0x0016, Instance   1, Attribute     2 <== [{'class': 22}, {'instance': 1}, {'attribute': 2}]
+2026-04-16 15:04:00,918 Found and enabled ('enip', <conpot.protocols.enip.enip_server.EnipServer object at 0x77c69c4af220>) protocol.
+2026-04-16 15:04:00,919 Creating persistent data store for protocol: ftp
+2026-04-16 15:04:00,921 FTP Serving File System at /data/ftp/ in vfs. FTP data_fs sub directory: /ftp
+2026-04-16 15:04:00,923 Found and enabled ('ftp', <conpot.protocols.ftp.ftp_server.FTPServer object at 0x77c69c4af730>) protocol.
+2026-04-16 15:04:00,924 Creating persistent data store for protocol: tftp
+2026-04-16 15:04:00,926 TFTP Serving File System at /data/tftp/ in vfs. TFTP data_fs sub directory: /tftp
+2026-04-16 15:04:00,927 Found and enabled ('tftp', <conpot.protocols.tftp.tftp_server.TftpServer object at 0x77c69c4afdf0>) protocol.
+2026-04-16 15:04:00,927 No proxy template found. Service will remain unconfigured/stopped.
+2026-04-16 15:04:00,927 Modbus server started on: ('0.0.0.0', 5020)
+2026-04-16 15:04:00,927 S7Comm server started on: ('0.0.0.0', 10201)
+2026-04-16 15:04:00,927 HTTP server started on: ('0.0.0.0', 8800)
+2026-04-16 15:04:01,029 SNMP server started on: ('0.0.0.0', 16100)
+2026-04-16 15:04:01,030 Bacnet server started on: ('0.0.0.0', 47808)
+2026-04-16 15:04:01,031 IPMI server started on: ('0.0.0.0', 6230)
+2026-04-16 15:04:21,033 handle server PID [ 1291] starting on ('0.0.0.0', 44818)
+2026-04-16 15:04:21,033 handle server PID [ 1291] responding to external done/disable signal via <class 'cpppo.dotdict.apidict'> {'done': False, 'disable': False, 'latency': 0.1}
+2026-04-16 15:04:21,034 Serving TCP/IP:     1, UDP/IP:     0, w/ latency:   0.100s, timeout:   0.200s (w/NO idle service)
+2026-04-16 15:04:21,034 FTP server started on: ('0.0.0.0', 2121)
+2026-04-16 15:04:21,034 Starting TFTP server at ('0.0.0.0', 6969)
+2026-04-16 15:06:35,772 New modbus session from 127.0.0.1 (4587e45c-a810-43f4-8345-34a28113de30)
+2026-04-16 15:06:35,778 New Modbus connection from 127.0.0.1:37280. (4587e45c-a810-43f4-8345-34a28113de30)
+2026-04-16 15:06:35,778 Exception occurred in ModbusServer.handle() at sock.recv(): [Errno 104] Connection reset by peer
+2026-04-16 15:06:35,778 Modbus client disconnected. (4587e45c-a810-43f4-8345-34a28113de30)
+2026-04-16 15:06:46,188 New Modbus connection from 127.0.0.1:42694. (4587e45c-a810-43f4-8345-34a28113de30)
+2026-04-16 15:06:46,188 Exception occurred in ModbusServer.handle() at sock.recv(): [Errno 104] Connection reset by peer
+2026-04-16 15:06:46,189 Modbus client disconnected. (4587e45c-a810-43f4-8345-34a28113de30)
+2026-04-16 15:06:46,189 Thread-13 (handle) server TID [ 1291/ None] runner target handle
+2026-04-16 15:06:46,190 Thread-13 (handle) server TID [ 1291/131694907653504] starting on ('127.0.0.1', 39820)
+2026-04-16 15:06:46,192                    ( ENIP_39820.( header.((empty)) recv:     0: b''
+2026-04-16 15:06:46,193 Transaction parsed  after   0.002s
+2026-04-16 15:06:46,193 Class     1/0x0001, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,194                 Identity, Class ID 0x0001, Instance ID   1 created
+2026-04-16 15:06:46,194 Class     1/0x0001, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,194 Class     1/0x0001, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,194            meta-Identity, Class ID 0x0001, Instance ID   0 created
+2026-04-16 15:06:46,194 Class     1/0x0001, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,195 Class     1/0x0001, Instance   0, Attribute  None ==> meta-Identity
+2026-04-16 15:06:46,195 [DEFAULT]
+2026-04-16 15:06:46,195 config_int((0x01,  0) meta-Identity, 'Revision', 0)-->0
+2026-04-16 15:06:46,195 config_int((0x01,  0) meta-Identity, 'Optional Attributes', 0)-->0
+2026-04-16 15:06:46,195 [DEFAULT]
+2026-04-16 15:06:46,196 config_int((0x01,  1) Identity, 'Vendor Number', 1)-->1
+2026-04-16 15:06:46,196 config_int((0x01,  1) Identity, 'Device Type', 14)-->14
+2026-04-16 15:06:46,196 config_int((0x01,  1) Identity, 'Product Code Number', 54)-->54
+2026-04-16 15:06:46,196 config_int((0x01,  1) Identity, 'Product Revision', 2836)-->2836
+2026-04-16 15:06:46,197 config_int((0x01,  1) Identity, 'Status Word', 12640)-->12640
+2026-04-16 15:06:46,198 config_int((0x01,  1) Identity, 'Serial Number', 7079450)-->7079450
+2026-04-16 15:06:46,198 config_str((0x01,  1) Identity, 'Product Name', '1756-L61/B LOGIX5561')-->'1756-L61/B LOGIX5561'
+2026-04-16 15:06:46,198 config_int((0x01,  1) Identity, 'State', 255)-->255
+2026-04-16 15:06:46,199 config_int((0x01,  1) Identity, 'Configuratio...istency Value', 0)-->0
+2026-04-16 15:06:46,199 config_int((0x01,  1) Identity, 'Heartbeat Interval', 0)-->0
+2026-04-16 15:06:46,199 Class     2/0x0002, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,199                    Logix, Class ID 0x0002, Instance ID   1 created
+2026-04-16 15:06:46,199 Class     2/0x0002, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,199 Class     2/0x0002, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,200               meta-Logix, Class ID 0x0002, Instance ID   0 created
+2026-04-16 15:06:46,200 Class     2/0x0002, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,200 Class     2/0x0002, Instance   0, Attribute  None ==> meta-Logix
+2026-04-16 15:06:46,200 [DEFAULT]
+2026-04-16 15:06:46,200 config_int((0x02,  0) meta-Logix, 'Revision', 0)-->0
+2026-04-16 15:06:46,201 config_int((0x02,  0) meta-Logix, 'Optional Attributes', 0)-->0
+2026-04-16 15:06:46,201 Class     6/0x0006, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,201       Connection_Manager, Class ID 0x0006, Instance ID   1 created
+2026-04-16 15:06:46,201 Class     6/0x0006, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,201 Class     6/0x0006, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,201  meta-Connection_Manager, Class ID 0x0006, Instance ID   0 created
+2026-04-16 15:06:46,201 Class     6/0x0006, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,202 Class     6/0x0006, Instance   0, Attribute  None ==> meta-Connection_Manager
+2026-04-16 15:06:46,202 [DEFAULT]
+2026-04-16 15:06:46,202 config_int((0x06,  0) me...ection_Manager, 'Revision', 0)-->0
+2026-04-16 15:06:46,202 config_int((0x06,  0) me...ection_Manager, 'Optional Attributes', 0)-->0
+2026-04-16 15:06:46,202 Class   102/0x0066, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,202           Unknown_Object, Class ID 0x0066, Instance ID   1 created
+2026-04-16 15:06:46,203 Class   102/0x0066, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,203 Class   102/0x0066, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,203      meta-Unknown_Object, Class ID 0x0066, Instance ID   0 created
+2026-04-16 15:06:46,203 Class   102/0x0066, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,203 Class   102/0x0066, Instance   0, Attribute  None ==> meta-Unknown_Object
+2026-04-16 15:06:46,203 [DEFAULT]
+2026-04-16 15:06:46,203 config_int((0x66,  0) meta-Unknown_Object, 'Revision', 0)-->0
+2026-04-16 15:06:46,204 config_int((0x66,  0) meta-Unknown_Object, 'Optional Attributes', 0)-->0
+2026-04-16 15:06:46,204 Class   245/0x00F5, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,204                    TCPIP, Class ID 0x00f5, Instance ID   1 created
+2026-04-16 15:06:46,204 Class   245/0x00F5, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,204 Class   245/0x00F5, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,205               meta-TCPIP, Class ID 0x00f5, Instance ID   0 created
+2026-04-16 15:06:46,205 Class   245/0x00F5, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,205 Class   245/0x00F5, Instance   0, Attribute  None ==> meta-TCPIP
+2026-04-16 15:06:46,205 [DEFAULT]
+2026-04-16 15:06:46,205 config_int((0xf5,  0) meta-TCPIP, 'Revision', 0)-->0
+2026-04-16 15:06:46,205 config_int((0xf5,  0) meta-TCPIP, 'Optional Attributes', 0)-->0
+2026-04-16 15:06:46,205 config_int((0xf5,  0) meta-TCPIP, 'Revision', 3)-->3
+2026-04-16 15:06:46,206 [DEFAULT]
+2026-04-16 15:06:46,206 config_int((0xf5,  1) TCPIP, 'Interface Status', 2)-->2
+2026-04-16 15:06:46,207 config_int((0xf5,  1) TCPIP, 'Configuration Capability', 48)-->48
+2026-04-16 15:06:46,207 config_int((0xf5,  1) TCPIP, 'Configuration Control', 0)-->0
+2026-04-16 15:06:46,207 config_str((0xf5,  1) TCPIP, 'Path to Physical Link', '[]')-->'[]'
+2026-04-16 15:06:46,208 config_json((0xf5,  1) TCPIP, 'Path to Physical Link', '[]')-->[]
+2026-04-16 15:06:46,209 config_str((0xf5,  1) TCPIP, 'Interface Configuration', '{}')-->'{}'
+2026-04-16 15:06:46,209 config_json((0xf5,  1) TCPIP, 'Interface Configuration', '{}')-->{}
+2026-04-16 15:06:46,210 config_str((0xf5,  1) TCPIP, 'Host Name', '')-->''
+2026-04-16 15:06:46,210 Class   172/0x00AC, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,210         Logical_Segments, Class ID 0x00ac, Instance ID   1 created
+2026-04-16 15:06:46,210 Class   172/0x00AC, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,211 Class   172/0x00AC, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,211    meta-Logical_Segments, Class ID 0x00ac, Instance ID   0 created
+2026-04-16 15:06:46,211 Class   172/0x00AC, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,211 Class   172/0x00AC, Instance   0, Attribute  None ==> meta-Logical_Segments
+2026-04-16 15:06:46,211 [DEFAULT]
+2026-04-16 15:06:46,211 config_int((0xac,  0) me...gical_Segments, 'Revision', 0)-->0
+2026-04-16 15:06:46,211 config_int((0xac,  0) me...gical_Segments, 'Optional Attributes', 0)-->0
+2026-04-16 15:06:46,211 [DEFAULT]
+2026-04-16 15:06:46,211 config_int((0xac,  1) Logical_Segments, 'Attribute 1', 5)-->5
+2026-04-16 15:06:46,212 config_int((0xac,  1) Logical_Segments, 'Attribute 2', 2)-->2
+2026-04-16 15:06:46,212 config_int((0xac,  1) Logical_Segments, 'Attribute 3', 3313545731)-->3313545731
+2026-04-16 15:06:46,212 config_int((0xac,  1) Logical_Segments, 'Attribute 4', 3313545731)-->3313545731
+2026-04-16 15:06:46,212 config_int((0xac,  1) Logical_Segments, 'Attribute 10', 3091717880)-->3091717880
+2026-04-16 15:06:46,212                     UCMM, Class ID 0x9999, Instance ID   1 created
+2026-04-16 15:06:46,212 Class 39321/0x9999, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,212 Class 39321/0x9999, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,212                meta-UCMM, Class ID 0x9999, Instance ID   0 created
+2026-04-16 15:06:46,212 Class 39321/0x9999, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,213 Class 39321/0x9999, Instance   0, Attribute  None ==> meta-UCMM
+2026-04-16 15:06:46,213 [DEFAULT]
+2026-04-16 15:06:46,213 config_int((0x9999,  0) meta-UCMM, 'Revision', 0)-->0
+2026-04-16 15:06:46,213 config_int((0x9999,  0) meta-UCMM, 'Optional Attributes', 0)-->0
+2026-04-16 15:06:46,213 [DEFAULT]
+2026-04-16 15:06:46,213 config_str((0x9999,  1) UCMM, 'Route Path', None)-->None
+2026-04-16 15:06:46,213 UCMM accepts route_path: (any)
+2026-04-16 15:06:46,213 config_str((0x9999,  1) UCMM, 'Route', '{}')-->'{}'
+2026-04-16 15:06:46,213 config_json((0x9999,  1) UCMM, 'Route', '{}')-->{}
+2026-04-16 15:06:46,213 Setup tag 'SCADA', to UTF-8: 'SCADA', to bytes: b'SCADA', to ISO-8859-1: 'SCADA'
+2026-04-16 15:06:46,214 Class    22/0x0016, Instance   1, Attribute     1 <== [{'class': 22}, {'instance': 1}, {'attribute': 1}]
+2026-04-16 15:06:46,214 Class    22/0x0016, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,214 Class    22/0x0016, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,214 Class     2/0x0002, Instance   0, Attribute  None ==> meta-Logix
+2026-04-16 15:06:46,214       Class    22/0x0016, Class ID 0x0016, Instance ID   1 created
+2026-04-16 15:06:46,214 Class    22/0x0016, Instance   1, Attribute  None ==> None
+2026-04-16 15:06:46,214 Class    22/0x0016, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,214  meta-Class    22/0x0016, Class ID 0x0016, Instance ID   0 created
+2026-04-16 15:06:46,214 Class    22/0x0016, Instance   0, Attribute  None ==> None
+2026-04-16 15:06:46,214 Class    22/0x0016, Instance   0, Attribute  None ==> meta-Class    22/0x0016
+2026-04-16 15:06:46,214 [DEFAULT]
+2026-04-16 15:06:46,214 config_int((0x16,  0) me...s    22/0x0016, 'Revision', 0)-->0
+2026-04-16 15:06:46,215 config_int((0x16,  0) me...s    22/0x0016, 'Optional Attributes', 0)-->0
+2026-04-16 15:06:46,215 Set Tag SCADA         @22/1/1   : Class    22/0x0016       Instance   1 Created
+2026-04-16 15:06:46,215 Class    22/0x0016, Instance   1, Attribute     1 ==> None
+2026-04-16 15:06:46,215 Set Tag SCADA         @22/1/1   : Class    22/0x0016       Instance   1 Added: SCADA                          SINT x1    == 100
+2026-04-16 15:06:46,215 Redirecting: scada                    --> Class 22, Inst. 1, Attr. 1
+2026-04-16 15:06:46,215 Class    22/0x0016, Instance   1, Attribute     1 ==> SCADA                          SINT x1    == 100
+2026-04-16 15:06:46,215 Setup tag 'TEXT', to UTF-8: 'TEXT', to bytes: b'TEXT', to ISO-8859-1: 'TEXT'
+2026-04-16 15:06:46,215 Class    22/0x0016, Instance   1, Attribute     2 <== [{'class': 22}, {'instance': 1}, {'attribute': 2}]
+2026-04-16 15:06:46,215 Class    22/0x0016, Instance   1, Attribute  None ==> Class    22/0x0016
+2026-04-16 15:06:46,215 Class    22/0x0016, Instance   1, Attribute     2 ==> None
+2026-04-16 15:06:46,216 Set Tag TEXT          @22/1/2   : Class    22/0x0016       Instance   1 Added: TEXT                        SSTRING[  32] == ['A', 'A', 'A', 'A', 'A', 'A', ...]
+2026-04-16 15:06:46,216 Redirecting: text                     --> Class 22, Inst. 1, Attr. 2
+2026-04-16 15:06:46,216 Class    22/0x0016, Instance   1, Attribute     2 ==> TEXT                        SSTRING[  32] == ['A', 'A', 'A', 'A', 'A', 'A', ...]
+2026-04-16 15:06:46,216 Setup tag 'FLOAT', to UTF-8: 'FLOAT', to bytes: b'FLOAT', to ISO-8859-1: 'FLOAT'
+2026-04-16 15:06:46,216 Class    22/0x0016, Instance   1, Attribute     3 <== [{'class': 22}, {'instance': 1}, {'attribute': 3}]
+2026-04-16 15:06:46,216 Class    22/0x0016, Instance   1, Attribute  None ==> Class    22/0x0016
+2026-04-16 15:06:46,216 Class    22/0x0016, Instance   1, Attribute     3 ==> None
+2026-04-16 15:06:46,216 Set Tag FLOAT         @22/1/3   : Class    22/0x0016       Instance   1 Added: FLOAT                          REAL[   4] == [0.1, 0.1, 0.1, 0.1]
+2026-04-16 15:06:46,217 Redirecting: float                    --> Class 22, Inst. 1, Attr. 3
+2026-04-16 15:06:46,217 Class    22/0x0016, Instance   1, Attribute     3 ==> FLOAT                          REAL[   4] == [0.1, 0.1, 0.1, 0.1]
+2026-04-16 15:06:46,217 EtherNet/IP CIP Request  (Client ('127.0.0.1', 39820)): {
+}
+2026-04-16 15:06:46,217 (0x9999,  1) UCMM Request: {
+}
+2026-04-16 15:06:46,217 Class     6/0x0006, Instance   1, Attribute  None ==> Connection_Manager
+2026-04-16 15:06:46,217 Connection_Manager Forward Close: <all>
+2026-04-16 15:06:46,217 EtherNet/IP CIP Response (Client ('127.0.0.1', 39820)): {
+}
+2026-04-16 15:06:46,217 Session ended (client initiated): {
+    'request':                      {},
+    'response':                     {},
+}
+2026-04-16 15:06:46,217 Transaction complete after   0.026s (w/   0.000s delay)
+2026-04-16 15:06:46,217 ENIP_39820 done; processed   0 requests over     0 bytes/    0 received (0 connections remain)
+2026-04-16 15:06:46,218 Thread-13 (handle) server TID [ 1291/131694907653504] stopping on ('127.0.0.1', 39820)
+2026-04-16 15:06:46,318 Thread-13 (handle) server TID [ 1291/131694907653504] complete on ('127.0.0.1', 39820)
+2026-04-16 15:07:17,181 Session timed out: 4587e45c-a810-43f4-8345-34a28113de30
+2026-04-16 15:12:23,002 New modbus session from 127.0.0.1 (cf44811a-420a-4d9e-856b-264243142d2b)
+2026-04-16 15:12:23,003 New Modbus connection from 127.0.0.1:36136. (cf44811a-420a-4d9e-856b-264243142d2b)
+2026-04-16 15:12:23,003 Exception occurred in ModbusServer.handle() at sock.recv(): [Errno 104] Connection reset by peer
+2026-04-16 15:12:23,004 Modbus client disconnected. (cf44811a-420a-4d9e-856b-264243142d2b)
+2026-04-16 15:12:47,213 New Modbus connection from 127.0.0.1:49294. (cf44811a-420a-4d9e-856b-264243142d2b)
+2026-04-16 15:12:47,213 Exception occurred in ModbusServer.handle() at sock.recv(): [Errno 104] Connection reset by peer
+2026-04-16 15:12:47,214 Modbus client disconnected. (cf44811a-420a-4d9e-856b-264243142d2b)
+2026-04-16 15:12:47,214 Thread-17 (handle) server TID [ 1291/ None] runner target handle
+2026-04-16 15:12:47,214 Thread-17 (handle) server TID [ 1291/131694907653504] starting on ('127.0.0.1', 37890)
+2026-04-16 15:12:47,216                    ( ENIP_37890.( header.((empty)) recv:     0: b''
+2026-04-16 15:12:47,216 Transaction parsed  after   0.000s
+2026-04-16 15:12:47,216 Class     1/0x0001, Instance   1, Attribute  None ==> Identity
+2026-04-16 15:12:47,216 Class     2/0x0002, Instance   1, Attribute  None ==> Logix
+2026-04-16 15:12:47,216 Class     6/0x0006, Instance   1, Attribute  None ==> Connection_Manager
+2026-04-16 15:12:47,216 Class   102/0x0066, Instance   1, Attribute  None ==> Unknown_Object
+2026-04-16 15:12:47,216 Class   245/0x00F5, Instance   1, Attribute  None ==> TCPIP
+2026-04-16 15:12:47,216 Class   172/0x00AC, Instance   1, Attribute  None ==> Logical_Segments
+2026-04-16 15:12:47,217 Setup tag 'SCADA', to UTF-8: 'SCADA', to bytes: b'SCADA', to ISO-8859-1: 'SCADA'
+2026-04-16 15:12:47,217 Class    22/0x0016, Instance   1, Attribute     1 ==> SCADA                          SINT x1    == 100
+2026-04-16 15:12:47,217 Setup tag 'TEXT', to UTF-8: 'TEXT', to bytes: b'TEXT', to ISO-8859-1: 'TEXT'
+2026-04-16 15:12:47,217 Class    22/0x0016, Instance   1, Attribute     2 ==> TEXT                        SSTRING[  32] == ['A', 'A', 'A', 'A', 'A', 'A', ...]
+2026-04-16 15:12:47,217 Setup tag 'FLOAT', to UTF-8: 'FLOAT', to bytes: b'FLOAT', to ISO-8859-1: 'FLOAT'
+2026-04-16 15:12:47,217 Class    22/0x0016, Instance   1, Attribute     3 ==> FLOAT                          REAL[   4] == [0.1, 0.1, 0.1, 0.1]
+2026-04-16 15:12:47,217 EtherNet/IP CIP Request  (Client ('127.0.0.1', 37890)): {
+}
+2026-04-16 15:12:47,217 (0x9999,  1) UCMM Request: {
+}
+2026-04-16 15:12:47,217 Class     6/0x0006, Instance   1, Attribute  None ==> Connection_Manager
+2026-04-16 15:12:47,217 Connection_Manager Forward Close: <all>
+2026-04-16 15:12:47,217 EtherNet/IP CIP Response (Client ('127.0.0.1', 37890)): {
+}
+2026-04-16 15:12:47,218 Session ended (client initiated): {
+    'request':                      {},
+    'response':                     {},
+}
+2026-04-16 15:12:47,218 Transaction complete after   0.002s (w/   0.000s delay)
+2026-04-16 15:12:47,218 ENIP_37890 done; processed   0 requests over     0 bytes/    0 received (0 connections remain)
+2026-04-16 15:12:47,218 Thread-17 (handle) server TID [ 1291/131694907653504] stopping on ('127.0.0.1', 37890)
+2026-04-16 15:12:47,319 Thread-17 (handle) server TID [ 1291/131694907653504] complete on ('127.0.0.1', 37890)
+2026-04-16 15:13:08,770 New Modbus connection from 127.0.0.1:43474. (cf44811a-420a-4d9e-856b-264243142d2b)
+2026-04-16 15:13:08,771 Exception occurred in ModbusServer.handle() at sock.recv(): [Errno 104] Connection reset by peer
+2026-04-16 15:13:08,771 Modbus client disconnected. (cf44811a-420a-4d9e-856b-264243142d2b)
+2026-04-16 15:13:39,573 Session timed out: cf44811a-420a-4d9e-856b-264243142d2b
+2026-04-16 15:14:37,331 Stopping Conpot
+2026-04-16 15:14:37,332 HTTP server will shut down gracefully as soon as all connections are closed.
+2026-04-16 15:14:37,770 Shutting down File System. Cleaning directories at /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/ConpotTempFS/__conpot__z42id0kw
