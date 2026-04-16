@@ -1,8 +1,8 @@
 to run the code(v1)
 
 term1- make sure openplc is running cd ot-security cd OpenPLC_v3 && sudo ./start_openplc.sh
-term2- activate conpot env then conpot --template default -f
-term3 -cd ot-security-monitor then sudo /opt/zeek/bin/zeek -i any zeek_scripts/ics_monitor.zeek
+term2- activate conpot env- source ~/.venvs/conpot310/bin/activate then conpot --template default -f
+term3 -cd zeek-logs then sudo /opt/zeek/bin/zeek -C -i any ~/ot-security-monitor/zeek_scripts/ics_monitor.zeek
 term4 - source ~/ot-security-env/bin/activate then cd ot-security-monitor 
         if you wanna train model python bootstrap_train.py
         then  python pipeline/zeek_parser.py
@@ -131,3 +131,9 @@ ERROR:conpot.protocols.modbus.modbus_server:Exception occurred in ModbusServer.h
 If all of this is working fine according to you lets implement phase 6 - the dashboard as when i start uvicorn server in another terminal at this point it shows
 {"detail":"Not Found"}
 Thats it. 
+
+#now dashboard added
+in term6 - source ~/ot-security-env/bin/activate
+        cd ~/ot-security-monitor
+        uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
+

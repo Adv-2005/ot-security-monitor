@@ -1,0 +1,64 @@
+2026-04-16 03:40:29,186 --force option specified. Using testing configuration
+2026-04-16 03:40:29,189 Starting Conpot using template: /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/templates/default
+2026-04-16 03:40:29,189 Starting Conpot using configuration found in: /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/testing.cfg
+2026-04-16 03:40:29,198 Can't find the temp directory. Conpot VFS would be kept at : /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/ConpotTempFS
+2026-04-16 03:40:29,198 Using default FS path. tar:///home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/data.tar
+2026-04-16 03:40:29,200 Initializing Virtual File System at /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/ConpotTempFS/__conpot__cxer7l72. Source specified : tar:///home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/data.tar
+ Please wait while the system copies all specified files
+2026-04-16 03:40:29,260 Fetched 103.92.103.159 as external ip.
+2026-04-16 03:40:29,266 Conpot modbus initialized
+2026-04-16 03:40:29,266 Found and enabled ('modbus', <conpot.protocols.modbus.modbus_server.ModbusServer object at 0x788332ba1b40>) protocol.
+2026-04-16 03:40:29,270 Conpot S7Comm initialized
+2026-04-16 03:40:29,270 Found and enabled ('s7comm', <conpot.protocols.s7comm.s7_server.S7Server object at 0x788332ba2740>) protocol.
+2026-04-16 03:40:29,273 Found and enabled ('http', <conpot.protocols.http.web_server.HTTPServer object at 0x788332ba28c0>) protocol.
+2026-04-16 03:40:29,275 Found and enabled ('snmp', <conpot.protocols.snmp.snmp_server.SNMPServer object at 0x788332ba1ba0>) protocol.
+2026-04-16 03:40:29,277 Conpot Bacnet initialized using the /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/templates/default/bacnet/bacnet.xml template.
+2026-04-16 03:40:29,277 Found and enabled ('bacnet', <conpot.protocols.bacnet.bacnet_server.BacnetServer object at 0x788332ba2b90>) protocol.
+2026-04-16 03:40:29,279 IPMI BMC initialized.
+2026-04-16 03:40:29,279 Conpot IPMI initialized using /home/advar/.venvs/conpot310/lib/python3.10/site-packages/conpot/templates/default/ipmi/ipmi.xml template
+2026-04-16 03:40:29,279 Found and enabled ('ipmi', <conpot.protocols.ipmi.ipmi_server.IpmiServer object at 0x788332ba2f20>) protocol.
+2026-04-16 03:40:29,282 Class    22/0x0016, Instance   1, Attribute     1 <== [{'class': 22}, {'instance': 1}, {'attribute': 1}]
+2026-04-16 03:40:29,282 Class    22/0x0016, Instance   1, Attribute     2 <== [{'class': 22}, {'instance': 1}, {'attribute': 2}]
+2026-04-16 03:40:29,282 Class    22/0x0016, Instance   1, Attribute     1 <== [{'class': 22}, {'instance': 1}, {'attribute': 1}]
+2026-04-16 03:40:29,283 Class    22/0x0016, Instance   1, Attribute     3 <== [{'class': 22}, {'instance': 1}, {'attribute': 3}]
+2026-04-16 03:40:29,283 Class    22/0x0016, Instance   1, Attribute     1 <== [{'class': 22}, {'instance': 1}, {'attribute': 1}]
+2026-04-16 03:40:29,283 Class    22/0x0016, Instance   1, Attribute     2 <== [{'class': 22}, {'instance': 1}, {'attribute': 2}]
+2026-04-16 03:40:29,283 Found and enabled ('enip', <conpot.protocols.enip.enip_server.EnipServer object at 0x788332ba34c0>) protocol.
+2026-04-16 03:40:29,286 Creating persistent data store for protocol: ftp
+2026-04-16 03:40:29,289 FTP Serving File System at /data/ftp/ in vfs. FTP data_fs sub directory: /ftp
+2026-04-16 03:40:29,294 Found and enabled ('ftp', <conpot.protocols.ftp.ftp_server.FTPServer object at 0x788332ba39d0>) protocol.
+2026-04-16 03:40:29,296 Creating persistent data store for protocol: tftp
+2026-04-16 03:40:29,298 TFTP Serving File System at /data/tftp/ in vfs. TFTP data_fs sub directory: /tftp
+2026-04-16 03:40:29,300 Found and enabled ('tftp', <conpot.protocols.tftp.tftp_server.TftpServer object at 0x788332a18160>) protocol.
+2026-04-16 03:40:29,300 No proxy template found. Service will remain unconfigured/stopped.
+2026-04-16 03:40:29,300 Modbus server started on: ('0.0.0.0', 5020)
+2026-04-16 03:40:29,301 S7Comm server started on: ('0.0.0.0', 10201)
+2026-04-16 03:40:29,301 HTTP server started on: ('0.0.0.0', 8800)
+2026-04-16 03:40:29,499 SNMP server started on: ('0.0.0.0', 16100)
+2026-04-16 03:40:29,501 Bacnet server started on: ('0.0.0.0', 47808)
+2026-04-16 03:40:29,501 IPMI server started on: ('0.0.0.0', 6230)
+2026-04-16 03:40:49,506 handle server PID [ 1095] starting on ('0.0.0.0', 44818)
+2026-04-16 03:40:49,506 handle server PID [ 1095] responding to external done/disable signal via <class 'cpppo.dotdict.apidict'> {'done': False, 'disable': False, 'latency': 0.1}
+2026-04-16 03:40:49,506 Serving TCP/IP:     1, UDP/IP:     0, w/ latency:   0.100s, timeout:   0.200s (w/NO idle service)
+2026-04-16 03:40:49,507 FTP server started on: ('0.0.0.0', 2121)
+2026-04-16 03:40:49,508 Starting TFTP server at ('0.0.0.0', 6969)
+2026-04-16 03:44:18,281 New modbus session from 127.0.0.1 (495bbdaf-7a5f-451c-9381-1176b653e7dc)
+2026-04-16 03:44:18,285 New Modbus connection from 127.0.0.1:48022. (495bbdaf-7a5f-451c-9381-1176b653e7dc)
+2026-04-16 03:44:18,285 Exception occurred in ModbusServer.handle() at sock.recv(): [Errno 104] Connection reset by peer
+2026-04-16 03:44:18,286 Modbus client disconnected. (495bbdaf-7a5f-451c-9381-1176b653e7dc)
+2026-04-16 03:44:50,609 Session timed out: 495bbdaf-7a5f-451c-9381-1176b653e7dc
+2026-04-16 03:45:45,647 New modbus session from 127.0.0.1 (f2766879-5ab8-4fc7-8433-2a05b6c35144)
+2026-04-16 03:45:45,648 New Modbus connection from 127.0.0.1:37374. (f2766879-5ab8-4fc7-8433-2a05b6c35144)
+2026-04-16 03:45:45,649 Exception occurred in ModbusServer.handle() at sock.recv(): [Errno 104] Connection reset by peer
+2026-04-16 03:45:45,649 Modbus client disconnected. (f2766879-5ab8-4fc7-8433-2a05b6c35144)
+2026-04-16 03:46:16,441 Session timed out: f2766879-5ab8-4fc7-8433-2a05b6c35144
+2026-04-16 03:50:15,869 New modbus session from 127.0.0.1 (4055e86b-e0ad-4240-9270-800a10671e14)
+2026-04-16 03:50:15,869 New Modbus connection from 127.0.0.1:36080. (4055e86b-e0ad-4240-9270-800a10671e14)
+2026-04-16 03:50:15,869 Exception occurred in ModbusServer.handle() at sock.recv(): [Errno 104] Connection reset by peer
+2026-04-16 03:50:15,870 Modbus client disconnected. (4055e86b-e0ad-4240-9270-800a10671e14)
+2026-04-16 03:50:46,660 Session timed out: 4055e86b-e0ad-4240-9270-800a10671e14
+2026-04-16 03:54:21,053 New modbus session from 127.0.0.1 (7263c9d1-ae9c-40ba-9ca1-f50e74e0b457)
+2026-04-16 03:54:21,054 New Modbus connection from 127.0.0.1:55796. (7263c9d1-ae9c-40ba-9ca1-f50e74e0b457)
+2026-04-16 03:54:21,054 Exception occurred in ModbusServer.handle() at sock.recv(): [Errno 104] Connection reset by peer
+2026-04-16 03:54:21,054 Modbus client disconnected. (7263c9d1-ae9c-40ba-9ca1-f50e74e0b457)
+2026-04-16 03:54:53,736 Session timed out: 7263c9d1-ae9c-40ba-9ca1-f50e74e0b457
