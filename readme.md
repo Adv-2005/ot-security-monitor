@@ -28,6 +28,7 @@ This project builds a lightweight, self-contained OT security monitoring prototy
 - [Running the System](#running-the-system)
 - [Testing with Simulated Attacks](#testing-with-simulated-attacks)
 - [Dashboard Walkthrough](#dashboard-walkthrough)
+- [Screenshots](#screenshots)
 - [Alert Types and Severity](#alert-types-and-severity)
 - [Replacing Synthetic Data with Real Datasets](#replacing-synthetic-data-with-real-datasets)
 - [Known Limitations](#known-limitations)
@@ -505,6 +506,36 @@ Ranked list of destination ports being hit, with amber glow dots for OT ports an
 
 **Service status (header)**
 Four pulsing green dots for OpenPLC, Conpot, Zeek, and the API. The API dot turns red if the backend becomes unreachable.
+
+---
+
+## Screenshots
+
+These dashboard and API screenshots were captured from the running FastAPI app using the existing `data/alerts.db` dataset (713 alerts and 1,704 flows at capture time).
+
+### Dashboard overview
+
+The alert feed, severity breakdown, alert types, and active target ports appear together.
+
+![OT Security Monitor dashboard overview](dashboard/screenshots/dashboard-overview.png)
+
+### Filtered OT protocol alerts
+
+Selecting `LOW` in the severity filter shows 20 alerts, including Modbus traffic to port 502.
+
+![Dashboard filtered to low-severity OT protocol alerts](dashboard/screenshots/low-severity-alerts.png)
+
+### API reference
+
+FastAPI exposes interactive documentation for alerts, statistics, connection events, and health.
+
+![FastAPI documentation for the monitor endpoints](dashboard/screenshots/api-docs.png)
+
+### Model training output
+
+The repository also contains a screenshot of a completed synthetic-data bootstrap training run.
+
+![Bootstrap model training metrics](image.png)
 
 ---
 
